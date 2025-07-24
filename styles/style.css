@@ -84,9 +84,14 @@ header {
     padding-bottom: 30px;
 
     >div {
-        width: 70%;
-        p{
-            width: 80%;
+        width: 80%;
+        p, h1:nth-child(1){
+            width: 70%;
+        }
+        h1:nth-child(1){
+            font-size: large;
+            font-weight: bold;
+            padding-bottom: 10px;
         }
         >div {
             display: flex;
