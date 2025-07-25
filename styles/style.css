@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 header {
     * {
         margin: 0;
@@ -7,9 +10,8 @@ header {
 
     nav {
         position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
+        top: 85%;
+        left: 20px;
         width: 80px;
         height: auto;
         display: flex;
@@ -27,8 +29,8 @@ header {
 
     .nav-content .toggle-btn,
     .nav-content span a {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         border-radius: 50%;
         background: white;
         display: flex;
@@ -41,7 +43,7 @@ header {
         z-index: 20;
         color: black;
         cursor: pointer;
-        transform: rotate(225deg);
+        transform: rotate(-225deg);
         transition: all 0.6s ease;
     }
 
@@ -53,18 +55,18 @@ header {
         position: absolute;
         transition: all 0.8s ease;
         opacity: 0;
-        transform: rotate(calc(var(--i) * (20deg / 5) + 60deg)) translateX(120px);
+        transform: rotate(calc(var(--i) * (40deg / 5) + 60deg)) translateX(200px);
         transform-origin: 0 0;
     }
 
     nav.open .nav-content span {
         opacity: 1;
-        transform: rotate(calc(var(--i) * (180deg / 5) - -45deg)) translateX(120px);
+        transform: rotate(calc(var(--i) * (120deg / 5) - 120deg)) translateX(200px);
     }
 
     .nav-content span a {
         text-decoration: none;
-        transform: rotate(calc(var(--i) * (-180deg / 5) - 45deg));
+        transform: rotate(calc(var(--i) * (-120deg / 5) - 240deg));
     }
 
     .nav-content span a:hover i {
