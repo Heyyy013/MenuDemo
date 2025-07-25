@@ -61,7 +61,7 @@ header {
 
     nav.open .nav-content span {
         opacity: 1;
-        transform: rotate(calc(var(--i) * (120deg / 5) - 120deg)) translateX(200px);
+        transform: rotate(calc(var(--i) * (120deg / 5) - -240deg)) translateX(200px);
     }
 
     .nav-content span a {
