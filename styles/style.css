@@ -1,6 +1,7 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 header {
     * {
         margin: 0;
@@ -55,7 +56,7 @@ header {
         position: absolute;
         transition: all 0.8s ease;
         opacity: 0;
-        transform: rotate(calc(var(--i) * (40deg / 5) + 60deg)) translateX(200px);
+        transform: rotate(calc(var(--i) * (180deg / 5) + 65deg)) translateX(200px);
         transform-origin: 0 0;
     }
 
@@ -87,17 +88,11 @@ header {
 
     >div {
         width: 80%;
-        p, h1:nth-child(1){
-            width: 70%;
-        }
-        h1:nth-child(1){
+
+        h1:nth-child(1) {
             font-size: large;
-            font-weight: bold;
             padding-bottom: 10px;
         }
-        >div {
-            display: flex;
-            justify-content: space-between;
-        }
+
     }
 }

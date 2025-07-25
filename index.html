@@ -16,7 +16,10 @@
 
 <body class="overflow-x-hidden">
     <header class="bg-[url('images/bg-header.jpg')] h-screen bg-no-repeat bg-cover bg-center overflow-hidden">
-        <div class="bg-black/50 h-[180%] w-[210%] rounded-full relative -top-full -left-full">
+        <div class="relative z-20">
+            <h1 class="text-xl text-center text-white pt-10">Bienvenue Chez Nous</h1>
+        </div>
+        <div class="bg-black/50 h-[170%] w-[210%] rounded-full relative -top-full -left-full z-10">
 
         </div>
         <nav>
@@ -43,149 +46,306 @@
         </nav>
 
     </header>
-    <div>
-    <div id="mainHeading">
-        <div>
-            <p><span>Q1.</span> How do i know if a product is available in boutiques?</p>
-        </div>
-        <button aria-label="toggler" data-menu>
-            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
-            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
-        </button>
-    </div>
-    <div id="menu">
-        <p>Remember you can query the status of your orders any time in My orders in the My account section. if you are not resigered at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter your e-mail address and order number.</p>
-    </div>
-</div>
-
-    <main class="text-white pt-10 bg-[url('images/bg-main.jpg')] bg-fixed flex flex-col gap-20">
-    
-    <div id="entrees" class="flex flex-col items-center justify-center gap-8 liste">
-        <h1 class="text-2xl" >Entrées</h1>
-        <div>
+    <!-- <div>
+        <div id="mainHeading">
             <div>
                 <h1>Salade César Classique</h1>
                 <h1>12.50€</h1>
             </div>
+            <button aria-label="toggler" data-menu>
+                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+            </button>
+        </div>
+        <div id="menu">
             <p>Laitue romaine croquante, croûtons à l'ail, copeaux de parmesan, et vinaigrette César maison.</p>
         </div>
-        <div>
+    </div> -->
+
+    <main class="text-white pt-10 bg-[url('images/bg-main.jpg')] bg-fixed flex flex-col gap-20">
+
+        <div id="entrees" class="flex flex-col items-center justify-center gap-8 liste">
+            <h1 class="text-2xl">Entrées</h1>
             <div>
-                <h1>Velouté de Potimarron</h1>
-                <h1>9.00€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Salade César Classique</h1>
+                        <h1>12.50€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Laitue romaine croquante, croûtons à l'ail, copeaux de parmesan, et vinaigrette César maison.</p>
+                </div>
             </div>
-            <p>Soupe crémeuse de potimarron, agrémentée d'une touche de crème fraîche et de graines de courge grillées.</p>
-        </div>
-        <div>
             <div>
-                <h1>Tartare de Saumon à l'Aneth</h1>
-                <h1>15.00€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Velouté de Potimarron</h1>
+                        <h1>9.00€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Soupe crémeuse de potimarron, agrémentée d'une touche de crème fraîche et de graines de courge
+                        grillées.</p>
+                </div>
             </div>
-            <p>Dés de saumon frais marinés à l'aneth, citron vert et huile d'olive, servis avec des toasts melba.</p>
-        </div>
-    </div>
-    
-    <div id="plats" class="flex flex-col items-center justify-center gap-8 liste">
-        <h1 class="text-2xl" >Plats</h1>
-        <div>
             <div>
-                <h1>Filet Mignon Sauce aux Morilles</h1>
-                <h1>28.00€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Tartare de Saumon à l'Aneth</h1>
+                        <h1>15.00€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Dés de saumon frais marinés à l'aneth, citron vert et huile d'olive, servis avec des toasts
+                        melba.</p>
+                </div>
             </div>
-            <p>Tendre filet de bœuf cuit à la perfection, nappé d'une riche sauce aux morilles, accompagné d'un gratin dauphinois.</p>
         </div>
-        <div>
+
+        <div id="plats" class="flex flex-col items-center justify-center gap-8 liste">
+            <h1 class="text-2xl">Plats</h1>
             <div>
-                <h1>Risotto aux Asperges Vertes</h1>
-                <h1>19.50€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Filet Mignon Sauce aux Morilles</h1>
+                        <h1>28.00€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Tendre filet de bœuf cuit à la perfection, nappé d'une riche sauce aux morilles, accompagné d'un
+                        gratin dauphinois.</p>
+                </div>
             </div>
-            <p>Crémeux risotto Arborio avec des asperges vertes fraîches, parmesan Reggiano et zeste de citron.</p>
-        </div>
-        <div>
             <div>
-                <h1>Poisson du Jour et Légumes de Saison</h1>
-                <h1>23.00€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Risotto aux Asperges Vertes</h1>
+                        <h1>19.50€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Crémeux risotto Arborio avec des asperges vertes fraîches, parmesan Reggiano et zeste de citron.
+                    </p>
+                </div>
             </div>
-            <p>Capture fraîche du jour, simplement grillée ou poêlée, servie avec un assortiment de légumes de saison croquants.</p>
-        </div>
-    </div>
-    
-    <div id="desserts" class="flex flex-col items-center justify-center gap-8 liste">
-        <h1 class="text-2xl" >Desserts</h1>
-        <div>
             <div>
-                <h1>Moelleux au Chocolat Cœur Coulant</h1>
-                <h1>9.50€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Poisson du Jour et Légumes de Saison</h1>
+                        <h1>23.00€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Capture fraîche du jour, simplement grillée ou poêlée, servie avec un assortiment de légumes de
+                        saison croquants.</p>
+                </div>
             </div>
-            <p>Gâteau au chocolat chaud avec un cœur fondant, servi avec une boule de glace vanille.</p>
         </div>
-        <div>
+
+
+        <div id="desserts" class="flex flex-col items-center justify-center gap-8 liste">
+            <h1 class="text-2xl">Desserts</h1>
             <div>
-                <h1>Tarte Tatin et sa Boule de Glace</h1>
-                <h1>8.00€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Moelleux au Chocolat Cœur Coulant</h1>
+                        <h1>9.50€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Gâteau au chocolat chaud avec un cœur fondant, servi avec une boule de glace vanille.</p>
+                </div>
             </div>
-            <p>Classique tarte aux pommes caramélisées, servie tiède avec une boule de glace à la vanille de Madagascar.</p>
-        </div>
-        <div>
             <div>
-                <h1>Salade de Fruits Frais de Saison</h1>
-                <h1>7.00€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Tarte Tatin et sa Boule de Glace</h1>
+                        <h1>8.00€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Classique tarte aux pommes caramélisées, servie tiède avec une boule de glace à la vanille de
+                        Madagascar.</p>
+                </div>
             </div>
-            <p>Assortiment de fruits frais coupés du jour, légèrement sucrés et mentholés.</p>
-        </div>
-    </div>
-    
-    <div id="froides" class="flex flex-col items-center justify-center gap-8 liste">
-        <h1 class="text-2xl" >Boissons Froides</h1>
-        <div>
             <div>
-                <h1>Jus d'Orange Pressé</h1>
-                <h1>4.50€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Salade de Fruits Frais de Saison</h1>
+                        <h1>7.00€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Assortiment de fruits frais coupés du jour, légèrement sucrés et mentholés.</p>
+                </div>
             </div>
-            <p>Jus d'oranges fraîches pressées à la minute, plein de vitamines.</p>
         </div>
-        <div>
+
+
+        <div id="froides" class="flex flex-col items-center justify-center gap-8 liste">
+            <h1 class="text-2xl">Boissons Froides</h1>
             <div>
-                <h1>Coca-Cola / Zéro</h1>
-                <h1>3.50€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Jus d'Orange Pressé</h1>
+                        <h1>4.50€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Jus d'oranges fraîches pressées à la minute, plein de vitamines.</p>
+                </div>
             </div>
-            <p>Boisson gazeuse rafraîchissante.</p>
-        </div>
-        <div>
             <div>
-                <h1>Eau Minérale (50cl)</h1>
-                <h1>3.00€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Coca-Cola / Zéro</h1>
+                        <h1>3.50€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Boisson gazeuse rafraîchissante.</p>
+                </div>
             </div>
-            <p>Eau de source naturelle, plate ou pétillante.</p>
-        </div>
-    </div>
-    
-    <div id="chaudes" class="flex flex-col items-center justify-center gap-8 liste">
-        <h1 class="text-2xl" >Boissons Chaudes</h1>
-        <div>
             <div>
-                <h1>Expresso</h1>
-                <h1>2.80€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Eau Minérale (50cl)</h1>
+                        <h1>3.00€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Eau de source naturelle, plate ou pétillante.</p>
+                </div>
             </div>
-            <p>Un café court et intense, fraîchement moulu.</p>
         </div>
-        <div>
+
+        <div id="chaudes" class="flex flex-col items-center justify-center gap-8 liste">
+            <h1 class="text-2xl">Boissons Chaudes</h1>
             <div>
-                <h1>Thé Vert "Menthe Nanah"</h1>
-                <h1>3.50€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Expresso</h1>
+                        <h1>2.80€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Un café court et intense, fraîchement moulu.</p>
+                </div>
             </div>
-            <p>Thé vert à la menthe fraîche, parfumé et désaltérant.</p>
-        </div>
-        <div>
             <div>
-                <h1>Chocolat Chaud Maison</h1>
-                <h1>4.50€</h1>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Thé Vert "Menthe Nanah"</h1>
+                        <h1>3.50€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Thé vert à la menthe fraîche, parfumé et désaltérant.</p>
+                </div>
             </div>
-            <p>Boisson chaude préparée avec du vrai chocolat fondu, onctueux et gourmand.</p>
+            <div>
+                <div id="mainHeading" class="flex justify-between items-center w-full md:px-6">
+                    <div>
+                        <h1>Chocolat Chaud Maison</h1>
+                        <h1>4.50€</h1>
+                    </div>
+                    <button aria-label="toggler" data-menu
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                        
+                        <img class="transform"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" class="hidden mt-6 w-full">
+                    <p>Boisson chaude préparée avec du vrai chocolat fondu, onctueux et gourmand.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</main>
-    <script src="scripts/script.js"></script>
+        <script src="scripts/script.js"></script>
 </body>
 
 

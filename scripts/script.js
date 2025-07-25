@@ -13,7 +13,7 @@ for (let i = 0; i < elements.length; i++) {
         let element = main.parentElement.parentElement;
         let indicators = main.querySelectorAll("img");
         let child = element.querySelector("#menu");
-        let h = element.querySelector("#mainHeading>div>p");
+        let h = element.querySelector("#mainHeading>div");
 
         h.classList.toggle("font-semibold");
         child.classList.toggle("hidden");
